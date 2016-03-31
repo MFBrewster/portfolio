@@ -22,6 +22,17 @@ body {
     vertical-align: middle;
 }
 
+#header-box {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 400px;
+  padding: 20px;
+  border-width: 25px;
+  border-radius: 10px;
+  border-color: #000;
+  background-color: #F6F6F6;
+}
+
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
@@ -204,6 +215,8 @@ hr.small {
 
 .img-portfolio {
     margin: 0 auto;
+    max-width: 375px;
+    max-height: 375px;
 }
 
 .img-portfolio:hover {
