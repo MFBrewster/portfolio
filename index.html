@@ -32,39 +32,20 @@
 
 <body>
 
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Mike Brewster</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-            </li>
-        </ul>
-    </nav>
-
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
           <div id="header-box">
             <h1>MIKE BREWSTER</h1>
             <h3>Full-Stack Web Developer</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Take A Look</a>
+            <ul>
+              <li id="about-me">About Mike</li>
+              <li id="work">Portfolio</li>
+              <li id="contact">Contact</li>
+            </ul>
           </div>
         </div>
+
     </header>
 
     <!-- About -->
@@ -83,63 +64,81 @@
     </section>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio">
+      <h2>My Work</h2>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>My Work</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="http://macaroni-squad.github.io/the-fridge-frontend/">
-                                    <img class="img-portfolio img-responsive" src="img/fridge.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="http://mfbrewster.github.io/diabetes-manager/">
-                                    <img class="img-portfolio img-responsive" src="img/diabetes-man.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="http://mfbrewster.github.io/tic-tac-toe/index.html">
-                                    <img class="img-portfolio img-responsive" src="img/tic-tac-toe.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="https://github.com/MFBrewster">
-                                    <img class="img-portfolio img-responsive" src="img/github.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
+          <div id="law-row" class="row">
+            <div class="col-lg-4 text-center portfolio-item">
+              <a href="http://mikebrewsterlaw.com/" target="_blank">
+                <img class="img-responsive" src="img/lawsite.jpg">
+              </a>
             </div>
-            <!-- /.row -->
+            <div class="col-lg-8">
+              <h3>Mike Brewster Law</h3>
+              <p>Informational web site for my law practice.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 text-center portfolio-item">
+              <a href="http://macaroni-squad.github.io/the-fridge-frontend/" target="_blank">
+                  <img class="img-responsive" src="img/fridge.jpg">
+              </a>
+            </div>
+            <div class="col-lg-8">
+              <h3>The Fridge</h3>
+              <p>File bucket for General Assembly group project. Front end uses Bootstrap with
+                Javascript and jQuery, back end used Express.js and a Mongo database.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 text-center portfolio-item">
+              <a href="http://mfbrewster.github.io/diabetes-manager/" target="_blank">
+                  <img class="img-responsive" src="img/diabetes-man.jpg">
+              </a>
+            </div>
+            <div class="col-lg-8">
+              <h3>Diabetes Manager</h3>
+              <p>Full-stack application with database CRUD actions for General Assembly
+                full-stack project. Front end uses Javascript and jQuery, back end uses
+                Ruby on Rails with a PostgresSQL database.</p>
+            </div>
+          </div>
+          <div id="tic-row" class="row">
+            <div class="col-lg-4 text-center portfolio-item">
+              <a href="http://mfbrewster.github.io/tic-tac-toe/index.html" target="_blank">
+                  <img class="img-responsive" src="img/tic-tac-toe.jpg">
+              </a>
+            </div>
+            <div class="col-lg-8">
+              <h3>Tic-Tac-Toe</h3>
+              <p>Front-end application for General Assembly first project. Javascript and jQuery.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 text-center portfolio-item">
+              <a href="https://github.com/MFBrewster" target="_blank">
+                  <img class="img-responsive" src="img/github.jpg">
+              </a>
+            </div>
+            <div class="col-lg-8">
+              <h3>Github: MFBrewster</h3>
+              <p>My Github page. Please feel free to email me with any questions!</p>
+            </div>
+          </div>
         </div>
         <!-- /.container -->
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>Mike Brewster</strong>
                     </h4>
-                    <a href="https://github.com/MFBrewster"><p>https://github.com/MFBrewster</p></a>
+                    <a href="https://github.com/MFBrewster" target="_blank"><p>https://github.com/MFBrewster</p></a>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:michalfbrewster@gmail.com">michael.f.brewster@gmail.com</a>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:michalfbrewster@gmail.com" target="_blank">michael.f.brewster@gmail.com</a>
                         </li>
                     </ul>
                     <br>
@@ -157,33 +156,27 @@
 
     <!-- Custom Theme JavaScript -->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
     // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+    let userHandler = function() {
+      $('#about-me').on('click', function() {
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top
+        }, 1000);
+      });
+      $('#work').on('click', function() {
+        $('html, body').animate({
+            scrollTop: $("#portfolio").offset().top
+        }, 1000);
+      });
+      $('#contact').on('click', function() {
+        $('html, body').animate({
+            scrollTop: $("#footer").offset().top
+        }, 1000);
+      });
+    };
 
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
+    $(document).ready(() => {
+      userHandler();
     });
     </script>
 
